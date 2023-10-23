@@ -70,7 +70,7 @@
                 "publicNetworkAccess": "Enabled",
                 "administrators": {
                     "administratorType": "ActiveDirectory",
-                    "principalType": "Group",
+                    "principalType": "user",
                     "login": "[parameters('loginaccount')]",
                     "sid": "92a27fa3-9b91-4686-a833-3890d49e560b",
                     "tenantId": "4101425f-6ffd-4da7-a124-4cd66e230f1d",
