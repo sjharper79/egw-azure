@@ -2,6 +2,14 @@
     "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
+        "appname": {
+            "type": "string",
+            "defaultValue": "Email Gateway"
+        },
+        "environment":{
+            "type": "string",
+            "defaultValue":"Staging"
+        },
         "location": { 
             "type":"string",
             "defaultValue":"eastus"
@@ -47,10 +55,10 @@
             "name": "[parameters('servers_egw_name')]",
             "location": "[parameters('location')]",
             "tags": {
-                "AppName": "",
+                "AppName": "[parameters('appname')]",
                 "CostCenter": "",
                 "Customer": "",
-                "Environment": "",
+                "Environment": "[parameters('environment')]",
                 "Requestor": ""
             },
             "kind": "v12.0",
@@ -69,10 +77,10 @@
             "name": "[parameters('storageAccounts_stemailgateway001_name')]",
             "location": "[parameters('location')]",
             "tags": {
-                "AppName": "",
+                "AppName": "[parameters('appname')]",
                 "CostCenter": "",
                 "Customer": "",
-                "Environment": "",
+                "Environment": "[parameters('environment')]",
                 "Requestor": ""
             },
             "sku": {
@@ -116,10 +124,10 @@
             "name": "[parameters('serverfarms_ASP_RGEmailgateway_name')]",
             "location": "[parameters('location')]",
             "tags": {
-                "AppName": "",
+                "AppName": "[parameters('appname')]",
                 "CostCenter": "",
                 "Customer": "",
-                "Environment": "",
+                "Environment": "[parameters('environment')]",
                 "Requestor": ""
             },
             "sku": {
@@ -153,11 +161,11 @@
                 "[resourceId('Microsoft.Sql/servers', parameters('servers_egw_name'))]"
             ],
             "tags": {
-                "AppName": "",
+                "AppName": "[parameters('appname')]",
                 "CostCenter": "",
                 "Customer": "",
 
-                "Environment": "",
+                "Environment": "[parameters('environment')]",
                 "Requestor": ""
             },
             "sku": {
@@ -187,10 +195,10 @@
                 "[resourceId('Microsoft.Web/serverfarms', parameters('serverfarms_ASP_RGEmailgateway_name'))]"
             ],
             "tags": {
-                "AppName": "",
+                "AppName": "[parameters('appname')]",
                 "CostCenter": "",
                 "Customer": "",
-                "Environment": "",
+                "Environment": "[parameters('environment')]",
                 "Requestor": ""
             },
             "kind": "app",
@@ -247,10 +255,10 @@
                 "[resourceId('Microsoft.Web/serverfarms', parameters('serverfarms_ASP_RGEmailgateway_name'))]"
             ],
             "tags": {
-                "AppName": "",
+                "AppName": "[parameters('appname')]",
                 "CostCenter": "",
                 "Customer": "",
-                "Environment": "",
+                "Environment": "[parameters('environment')]",
                 "Requestor": ""
             },
             "kind": "app",
@@ -296,10 +304,10 @@
                 "[resourceId('Microsoft.Web/serverfarms', parameters('serverfarms_ASP_RGEmailgateway_name'))]"
             ],
             "tags": {
-                "AppName": "",
+                "AppName": "[parameters('appname')]",
                 "CostCenter": "",
                 "Customer": "",
-                "Environment": "",
+                "Environment": "[parameters('environment')]",
                 "Requestor": ""
             },
             "kind": "app",
