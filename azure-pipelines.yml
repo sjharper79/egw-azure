@@ -19,6 +19,7 @@ steps:
     resourceGroupName: 'RG-Emailgateway'
     location: 'East US'
     templateLocation: 'URL of the file'
-    csmFileLink: 'https://raw.githubusercontent.com/sjharper79/egw-azure/main/create_web_app/template.json?token=GHSAT0AAAAAACIM2WH3F3ZUWWSC7RRFMTSSZJZFUSA'
+    csmFileLink: 'https://raw.githubusercontent.com/sjharper79/egw-azure/main/create_web_app/template.json?token=GHSAT0AAAAAACIM2WH2NEGPWHXCEHKW2RAWZJZGASQ'
+    
     deploymentMode: 'Incremental'
     deploymentName: 'DeployPipelineTemplate'
