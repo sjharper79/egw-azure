@@ -2,17 +2,12 @@
     "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
-
-        "resourcePrefix": {
-            "type":"string",
-            "defaultvalue":"sjharper79"
-        },
         "location": { 
             "type":"string",
             "defaultValue":"eastus"
         },
         "servers_egw_name": {
-            "defaultValue": "[concat(parameters('resourcePrefix'),'-egw')]",
+            "defaultValue": "sjharper-egw",
             "type": "String"
         },
         "sites_webapp_emailgateway_name": {
@@ -32,7 +27,7 @@
             "type": "String"
         },
         "storageAccounts_stemailgateway001_name": {
-            "defaultValue": "[concat(parameters('resourcePrefix'),'stemailgateway001')]",
+            "defaultValue": "sjharperstemailgateway001",
             "type": "String"
         },
         "apiVersion": {
@@ -41,10 +36,6 @@
             "metadata": {
                 "description": "The version of the api for sql server"
             }
-        },
-        "loginaccount": {
-            "type":"string",
-            "defaultValue":"sjharper79@gmail.com"
         }
     },
     "variables": {},
