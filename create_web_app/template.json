@@ -7,7 +7,7 @@
             "defaultValue":"eastus"
         },
         "servers_egw_name": {
-            "defaultValue": "sjharper-egw",
+            "defaultValue": "sjh-egw",
             "type": "String"
         },
         "sites_webapp_emailgateway_name": {
@@ -27,7 +27,7 @@
             "type": "String"
         },
         "storageAccounts_stemailgateway001_name": {
-            "defaultValue": "sjharperstemailgateway001",
+            "defaultValue": "sjhstemailgateway001",
             "type": "String"
         },
         "apiVersion": {
